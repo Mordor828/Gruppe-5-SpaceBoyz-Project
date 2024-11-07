@@ -49,7 +49,7 @@ li a {
   text-transform: uppercase;
   font-family: oswald, sans-serif;
   font-size: 30px;
-  color: #53040e;
+  color: #f4d835;
   padding: 20px;
 }
 
@@ -123,12 +123,11 @@ hr {
 }
 
 .social-icons {
-  margin-top: 10px;
+
 }
 
 .social-icons a {
   color: #fff;
-  margin: 0 10px;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
@@ -147,5 +146,11 @@ hr {
   to {
     opacity: 1;
     transform: rotateX(0);
+  }
+}
+
+@media (prefer-reduced-motion) {
+  html {
+      scroll-behavior: auto;
   }
 }
