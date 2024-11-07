@@ -30,38 +30,58 @@
   <div class="wrapper">
 <img src="./Photos/noback222.png">
   <hr></hr>
- <div class="wrappertwo">
-<img src="./Photos/Skjermbilde 2024-11-06 194844.png" >
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
-  Sed ullam laudantium<br> 
-  beatae repudiandae modi <br>
-  quasi molestias odio, <br>
-  aliquid accusantium quod omnis <br>
-  quas soluta voluptate quisquam facilis <br>
-  aspernatur eaque! Debitis, nemo!
-</p>
+  <section class="information"> <h3>Background images</h3>
+    <article>
+       <div class="paragraph-container">
+          <p>
+             Bakgrunnsbilder vil som standard kun ta opp sin originale
+             størrelse, og deretter repetere seg selv, for å fylle ut
+             resten av elementet. <br />
+             Vi legger derfor til <br />
+             <code>background-repeat: no-repeat;</code>
+             og <br />
+             <code>background-size: cover;</code>
+             <br />
+             for at bakgrunnsbilde ikke skal repetere seg selv, men
+             heller strekke seg ut over elementet det tilhører
+          </p>
+       </div>
 
+       <div class="paragraph-container">
+          <p>
+             Ut i fra hva vi ønsker å gjøre med bildet, så kan vi også
+             legge til en <br />
+             <code>background-attachment: fixed;</code> <br />
+             for å oppnå en slags paralax effekt på siden. Da vil
+             bildene være satt i en "fixed" posisjon på siden, uavhengig
+             av når bruker scroller.
+          </p>
+       </div>
+    </article>
+</section>
 
- </div>
- <div class="wrapperthree">
-<img src="./Photos/Skjermbilde 2024-11-06 194858.png">
+<section class="bg-img" id="second"><h2>Background repeats</h2></section>
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
-  Sed ullam laudantium<br> 
-  beatae repudiandae modi <br>
-  quasi molestias odio, <br>
-  aliquid accusantium quod omnis <br>
-  quas soluta voluptate quisquam facilis <br>
-  aspernatur eaque! Debitis, nemo!
-</p>
-
-
- </div>
-
-
-  </div>
-
-
+  <section class="information">     <h3>Background position</h3>
+    <article>
+       <div class="paragraph-container">
+          <p>
+             For at bakgrunnsbilder skal bli akkurat slik vi ønsker,
+             trenger vi også å sette en <br />
+             <code>background-position:</code> <br />
+             for å definere start posisjonen til bakgrunnsbildet. <br />
+             Om vi ikke setter en value her, vil den som standard sette
+             seg til left top.
+          </p>
+       </div>
+       <div class="paragraph-container">
+          <p>
+             Om vi kun spesifiserer ett keyword, så vil det andre
+             automatisk bli "center"
+          </p>
+       </div>
+    </article>
+</section>
   
     <footer class="footer" id="footer">
       <div class="footer-content">
