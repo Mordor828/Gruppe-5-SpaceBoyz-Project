@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+
+body {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  height: 100%;
+  width: 100vh;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  animation: transitionIn 1s;
+}
+
+.navbar {
+  overflow: hidden;
+  padding-top: 20px;
+  animation: transitionIn 1s;
+}
+
+ul {
+  list-style-type: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-right: 15px;
+  animation: transitionIn 1s;
+}
+
+li {
+  float: left;
+  padding-bottom: 20px;
+  animation: transitionIn 1s;
+}
+
+li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: oswald, sans-serif;
+  font-size: 30px;
+  color: #53040e;
+  padding: 20px;
+}
+
+li a:hover {
+  color: rgb(48, 220, 250);
+}
+.content-area {
+  animation: transitionIn 1s;
+}
+
+hr {
+  margin-top: 20px;
+  border: 5;
+  height: 10px;
+  background-image: linear-gradient(
+    to right,
+    rgba(70, 75, 73, 0),
+    rgb(89, 92, 100),
+    rgba(53, 51, 54, 0)
+  );
+  animation: transitionIn 1s;
+}
+
+.wrappertwo {
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 10px;
+  border-radius: 100px;
+}
+
+.wrappertwo p {
+  font-family: oswald, sans-serif;
+  font-size: 20px;
+  color: aliceblue;
+  text-align: center;
+  padding-right: 600px;
+}
+
+.wrapperthree {
+  align-items: center;
+  padding-left: 700px;
+  border-radius: 100px;
+}
+
+.wrapperthree p {
+  font-family: oswald, sans-serif;
+  font-size: 20px;
+  color: aliceblue;
+  text-align: center;
+  right: 72%;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
