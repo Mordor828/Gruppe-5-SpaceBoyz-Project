@@ -170,3 +170,22 @@ hr {
   background-color: rgb(0, 22, 5);
   color: rgb(144, 144, 144);
 }
+
+.bg-img {
+  min-height: 100svh;
+  background-color: dimgray;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  place-items: center;
+}
+
+#first {
+  background-image: url(./Photos/Alpha\,_Beta_and_Proxima_Centauri.jpg);
+} 
+
+#second {
+  background-image: url(./Photos/photopurple.jpg);
+}
