@@ -8,7 +8,7 @@ body {
   background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+  height:0;
   margin: 0;
 }
 
@@ -61,7 +61,7 @@ li a:hover {
 }
 
 hr {
-  margin-top: 20px;
+  margin-top: 25px;
   border: 5;
   height: 10px;
   background-image: linear-gradient(
@@ -75,10 +75,21 @@ hr {
 
 
    .box {
-        height: auto;
+        height:0;
         position: fixed;
-        top: 0;
+        top:0;
         left: 0;
+  
+      }
+
+      .box p {
+        align-items: center;
+        font-family: oswald, sans-serif;
+        font-size: 20px;
+        color: aliceblue;
+        margin-top: 100px;
+        margin-left: 500px;
+
       }
 
 
@@ -184,16 +195,19 @@ hr {
       }
 
 
+
+
 /* Footer styling */
 .footer {
   background-color: #000000;
   font-family: oswald, sans-serif;
   color: #960707;
   text-align: center;
-  padding: 20px;
-  margin-top: 545px;
-  margin-left:500px;
-  font-size: 18px;
+  padding: 80px;
+  margin-top: 350px;
+  margin-left: 390px;
+  font-size: 16px;
+
 }
 
 .footer-content {
@@ -204,6 +218,8 @@ hr {
 .footer p {
   margin: 0;
   padding: 5px;
+  color: #960707;
+  font-size: 18px;
 }
 
 .social-icons {
@@ -213,6 +229,7 @@ hr {
   margin-inline: auto;
   width: 30px;
   height: 30px;
+ 
 }
 
 .social-icons a:hover {
@@ -220,9 +237,8 @@ hr {
 }
 
 #email {
-  color: rgb(124, 24, 24); 
-
-  }
+  color: #960707;
+}
 
 @keyframes transitionIn {
   from {
@@ -254,35 +270,3 @@ hr {
       }
 
 
-/* Page 3 Testing */
-
-
-/*
-.information {
-  height: 100svh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: rgb(0, 22, 5);
-  color: rgb(144, 144, 144);
-}
-
-.bg-img {
-  min-height: 100svh;
-  background-color: dimgray;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  display: grid;
-  place-items: center;
-}
-
-#first {
-  background-image: url(./Photos/Alpha\_Beta_and_Proxima_Centauri.jpg);
-}
-
-#second {
-  background-image: url(./Photos/photopurple.jpg);
-}
