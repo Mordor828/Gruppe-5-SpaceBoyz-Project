@@ -167,7 +167,7 @@ hr {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgb(0, 22, 5);
+  background-color: rgb(7, 0, 22);
   color: rgb(144, 144, 144);
 }
 
@@ -187,5 +187,5 @@ hr {
 } 
 
 #second {
-  background-image: url(./Photos/photopurple.jpg);
+  background-image: url(./Photos/Position_Alpha_Cen.png);
 }
