@@ -140,11 +140,13 @@ hr {
 .footer-content {
   max-width: 800px;
   margin: 0 auto;
+
 }
 
 .footer p {
   margin: 0;
   padding: 5px;
+  
 }
 
 .social-icons {
@@ -154,6 +156,7 @@ hr {
   margin-inline: auto;
   width: 30px;
   height: 30px;
+  color:aliceblue;
 }
 
 .social-icons a:hover {
@@ -161,14 +164,9 @@ hr {
 }
 
 #email {
-  color: rgb(0, 0, 0); (Den kan ikke være svart fordi da forsvinner teksten sammen med den svarte bakgrunnen)
+  color: rgb(124, 24, 24); 
 
-
-#email {
-  color: #960707;
-  margin-left: 183px;
-}
-
+  }
 
 @keyframes transitionIn {
   from {
@@ -217,3 +215,13 @@ hr {
   font-size: 15px;
 
 }
+
+/*
+#first {
+  background-image: url(Photos/Alpha\_Beta_and_Proxima_Centauri.jpg);
+} 
+
+#second {
+  background-image: url(Photos/dark-blue-background111.jpg);
+}
+
