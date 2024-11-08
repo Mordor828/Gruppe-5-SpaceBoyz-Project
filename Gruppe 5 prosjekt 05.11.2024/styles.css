@@ -151,9 +151,12 @@ hr {
   color: rgb(78, 48, 250);
 }
 
+
 #email {
-  color: rgb(0, 0, 0);
+  color: #960707;
+  margin-left: 183px;
 }
+
 
 @keyframes transitionIn {
   from {
