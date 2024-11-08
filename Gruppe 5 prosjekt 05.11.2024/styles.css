@@ -111,12 +111,13 @@ hr {
   padding: 80px;
   margin-top: 90px;
   font-size: 18px;
-
 }
 
 .footer-content {
   max-width: 800px;
   margin: 0 auto;
+  padding-top: 5px;
+
 }
 
 .footer p {
@@ -124,17 +125,30 @@ hr {
   padding: 5px;
 }
 
-.social-icons {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  margin-inline: auto;
-  width: 30px;
-  height: 30px;
+.socials {
+  animation: transitionIn 1s;
+  padding-right:299px;
+  padding-top: 30px;
+  }
+
+.socials li {
+  margin: 0 10px;
+ 
 }
 
-.social-icons a:hover {
-  color: #4a90e2;
+.socials a {
+  padding: 10px 10px;
+  text-decoration: none;
+  color: #ebf37d;
+}
+
+.socials a i {
+  font-size: 30px;
+  transition: color 0.4s ease;
+}
+
+.socials a:hover {
+  color: rgb(78, 48, 250);
 }
 
 #email {
@@ -155,12 +169,11 @@ hr {
 
 @media (prefer-reduced-motion) {
   html {
-      scroll-behavior: auto;
+    scroll-behavior: auto;
   }
 }
 
-
-/* Page 3 Testing */ 
+/* Page 3 Testing */
 
 .information {
   height: 100svh;
@@ -174,19 +187,18 @@ hr {
 
 .bg-img {
   min-height: 100svh;
-  background-color: dimgray;
+  background-image: url(Photos/Alpha\,_Beta_and_Proxima_Centauri.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   display: grid;
   place-items: center;
+  font-family: oswald, sans-serif;
 }
 
-#first {
-  background-image: url(./Photos/Alpha\,_Beta_and_Proxima_Centauri.jpg);
-} 
+.paragraph-container {
+  font-family: oswald, sans-serif;
+  font-size: 15px;
 
-#second {
-  background-image: url(./Photos/photopurple.jpg);
 }
