@@ -125,31 +125,43 @@ hr {
   padding: 5px;
 }
 
-.socials {
-  animation: transitionIn 1s;
-  padding-right:299px;
-  padding-top: 30px;
-  }
+/* Footer styling */
+.footer {
+  background-color: #000000;
+  font-family: oswald, sans-serif;
+  color: #960707;
+  text-align: center;
+  padding: 80px;
+  margin-top: 90px;
+  font-size: 18px;
 
-.socials li {
-  margin: 0 10px;
- 
 }
 
-.socials a {
-  padding: 10px 10px;
-  text-decoration: none;
-  color: #ebf37d;
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.socials a i {
-  font-size: 30px;
-  transition: color 0.4s ease;
+.footer p {
+  margin: 0;
+  padding: 5px;
 }
 
-.socials a:hover {
-  color: rgb(78, 48, 250);
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-inline: auto;
+  width: 30px;
+  height: 30px;
 }
+
+.social-icons a:hover {
+  color: #4a90e2;
+}
+
+#email {
+  color: rgb(0, 0, 0); (Den kan ikke være svart fordi da forsvinner teksten sammen med den svarte bakgrunnen)
 
 
 #email {
