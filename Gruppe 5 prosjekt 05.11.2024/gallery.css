@@ -8,7 +8,7 @@ body {
   background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
-  height:0;
+  height: 0;
   margin: 0;
 }
 
@@ -73,141 +73,74 @@ hr {
   animation: transitionIn 1s;
 }
 
+.carousel {
+  overflow: hidden;
+  max-width: 800px;
+  position: absolute;
+  left: 22%;
+  top: 8%;
+}
 
-   .box {
-        height:0;
-        position: fixed;
-        top:0;
-        left: 0;
-  
-      }
+.carousel p {
+  font-family: oswald, sans-serif;
+  font-size: 25px;
+  color: white;
+  align-items: center;
+  margin-left: 200px;
+  margin-top: 50px;
+}
 
-      .box p {
-        align-items: center;
-        font-family: oswald, sans-serif;
-        font-size: 20px;
-        color: aliceblue;
-        margin-top: 100px;
-        margin-left: 500px;
+.carousel .carousel__item,
+.carousel .carousel__item--hidden {
+  display: none;
+}
 
-      }
+.carousel .carousel__item img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
 
+.carousel .carousel__item--visible {
+  display: block;
+  animation: fadeVisibility 0.5s;
+}
 
-     
-      .carousel {
-        overflow: hidden;
-        max-width: 800px;
-        position: fixed;
-        left: 22%;
-        top: 15%;
-      }
+.carousel .carousel__actions {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+}
 
-      .carousel .carousel__item,
-      .carousel .carousel__item--hidden {
-        display: none;
-      }
+.carousel .carousel__actions button {
+  border-radius: 50px;
+  border: 0;
+  font-weight: bold;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
 
-      .carousel .carousel__item img {
-        width: 100%;
-        max-width: 800px;
-        height: auto;
-      }
+.carousel .carousel__actions button#carousel__button--prev {
+  margin-left: 20px;
+}
 
-      .carousel .carousel__item--visible {
-        display: block;
-        animation: fadeVisibility 0.5s;
-      }
-
-      .carousel .carousel__actions {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-      }
-
-      .carousel .carousel__actions button {
-        border-radius: 50px;
-        border: 0;
-        font-weight: bold;
-        cursor: pointer;
-        width: 40px;
-        height: 40px;
-      }
-
-      .carousel .carousel__actions button#carousel__button--prev {
-        margin-left: 20px;
-      }
-
-      .carousel .carousel__actions button#carousel__button--next {
-        margin-right: 20px;
-      }
-
-      .carousel {
-        overflow: hidden;
-        max-width: 800px;
-        position: fixed;
-        left: 22%;
-        top: 23%;
-      }
-
-      .carousel .carousel__item,
-      .carousel .carousel__item--hidden {
-        display: none;
-      }
-
-      .carousel .carousel__item img {
-        width: 100%;
-        max-width: 800px;
-        height: auto;
-      }
-
-      .carousel .carousel__item--visible {
-        display: block;
-        animation: fadeVisibility 0.5s;
-      }
-
-      .carousel .carousel__actions {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-      }
-
-      .carousel .carousel__actions button {
-        border-radius: 50px;
-        border: 0;
-        font-weight: bold;
-        cursor: pointer;
-        width: 40px;
-        height: 40px;
-      }
-
-      .carousel .carousel__actions button#carousel__button--prev {
-        margin-left: 20px;
-      }
-
-      .carousel .carousel__actions button#carousel__button--next {
-        margin-right: 20px;
-      }
-
-
-
+.carousel .carousel__actions button#carousel__button--next {
+  margin-right: 20px;
+}
 
 /* Footer styling */
 .footer {
-  background-color: #000000;
-  font-family: oswald, sans-serif;
-  color: #960707;
+  background-color: #5b5b5b;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
   text-align: center;
-  padding: 80px;
-  margin-top: 350px;
-  margin-left: 390px;
-  font-size: 16px;
-
+  padding: 20px;
+  margin-top: 500px;
+  font-size: 14px;
 }
 
 .footer-content {
@@ -218,8 +151,6 @@ hr {
 .footer p {
   margin: 0;
   padding: 5px;
-  color: #960707;
-  font-size: 18px;
 }
 
 .social-icons {
@@ -229,15 +160,10 @@ hr {
   margin-inline: auto;
   width: 30px;
   height: 30px;
- 
 }
 
 .social-icons a:hover {
   color: #4a90e2;
-}
-
-#email {
-  color: #960707;
 }
 
 @keyframes transitionIn {
@@ -258,15 +184,14 @@ hr {
   }
 }
 
-
-      @keyframes fadeVisibility {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-          transform: opacity linear;
-        }
-      }
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: opacity linear;
+  }
+}
 
 
